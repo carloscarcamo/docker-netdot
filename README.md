@@ -21,11 +21,11 @@ $ sudo docker build -t netdot .
 ##Run the new image
 
 ```
-$ sudo docker run -i -t -p 8888:80 -p 4303:3306 -v /var/www/:/var/www/ -v /var/local/dbs/:/var/lib/mysql\
- --hostname="netdothost" -d netdot init
+$ sudo docker run -i -t -p 8888:80 -p 4303:3306 -v /var/www/:/var/www/ \
+  -v /var/local/dbs/:/var/lib/mysql --hostname="netdothost" -d netdot init
 ```
 
-go to: http://<docker-host-ip>:8888/netdot/
+go to: http://localhost:8888/netdot/
 
 You can also access to mysql on the container:
 
