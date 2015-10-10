@@ -32,7 +32,7 @@ $ sudo docker build -t netdot .
 
 ```
 $ sudo docker run -i -t -p 8888:80 -p 4303:3306 -v /var/www/:/var/www/ \
-  -v /var/local/dbs/:/var/lib/mysql --hostname="netdothost" -d netdot init
+  -v /var/local/dbs/:/var/lib/mysql --hostname="netdothost" -d netdot
 ```
 
 go to: http://localhost:8888/netdot/
