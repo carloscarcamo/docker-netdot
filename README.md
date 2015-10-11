@@ -1,7 +1,7 @@
 Docker Netdot
 =============
 
-This project is base on https://github.com/42wim/docker-netdot_deploy
+This project is inspired by https://github.com/42wim/docker-netdot_deploy
 
 This will deploy all the Netdot stack on your Docker host. This project will pull a custom image based on GNU/Debian Jessie with all services (MariaDB, Apache) and configuration files needed to run netdot web interface.
 
