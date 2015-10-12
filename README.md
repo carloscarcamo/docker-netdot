@@ -10,19 +10,19 @@ This will deploy all the Netdot stack on your Docker host. This project will pul
 
 If you need more about about netdot, go to: https://osl.uoregon.edu/redmine/projects/netdot
 
-#Prerequisites
+# Prerequisites
 
 * Docker (Of course! xD), see https://docs.docker.com/installation/
 
-#Usage
+# Usage
 
-##Clone this repo
+## Clone this repo
 
 ```
 $ git clone https://github.com/carloscarcamo/docker-netdot.git && cd docker-netdot
 ```
 
-##Build Dockerfile
+## Build Dockerfile
 
 ```
 $ sudo docker build -t netdot .
@@ -38,7 +38,7 @@ REPOSITORY                        TAG                 IMAGE ID            CREATE
 netdot                            latest              fd1d15cb70f7        About a minute ago   1.111 GB
 ```
 
-##Run the new image
+## Run the new image
 
 ```
 $ sudo docker run -i -t -p 8888:80 -p 4303:3306 -v /var/www/:/var/www/ \
